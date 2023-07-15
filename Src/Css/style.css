@@ -1,0 +1,22 @@
+/*Reset das configurações padrões do site*/
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+
+    background-image: linear-gradient(#06C3FF, #4E71EB);
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+
+/*=============================================*/
+/*=============================================*/
+/*=============================================*/
+/*=============================================*/
+
