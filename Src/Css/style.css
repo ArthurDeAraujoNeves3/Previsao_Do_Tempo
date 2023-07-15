@@ -12,6 +12,38 @@ body{
     background-image: linear-gradient(#06C3FF, #4E71EB);
     background-attachment: fixed;
     overflow: hidden;
+
+    font-family: 'Ubuntu_Regular';
+    color: #575757;
+}
+
+::placeholder { 
+    
+    font-size: 16px;
+    font-weight: bold;
+    color: #575757;
+}
+
+/*=============================================*/
+/*=============================================*/
+/*=============================================*/
+/*=============================================*/
+
+
+/*Tabela com as informacoes do clima*/
+.Tabela_Do_Tempo{
+
+    background-image: linear-gradient( white, #D9D9D9);
+
+    max-width: 100%;
+    width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -20,3 +52,176 @@ body{
 /*=============================================*/
 /*=============================================*/
 
+
+.Tempo{
+
+    display: flex;
+    align-items: center;
+}
+
+/*Fonte dos graus*/
+.Graus{
+
+    font-size: 80px;
+    font-weight: bold;
+}
+/*Botoes celsius e fareheit*/
+.Btns_graus{
+
+    font-size: 25px;
+    cursor: pointer;
+}
+/*Btn de farenheit*/
+#farenheit{
+
+    margin-top: 10px;
+    color: #C0C0C0;
+}
+
+
+/*=============================================*/
+/*=============================================*/
+/*=============================================*/
+/*=============================================*/
+
+
+.Div_Ceu{
+
+    display: flex;
+    align-items: center;
+}
+/*Texto sobre a informacao do ceu*/
+.Ceu{
+
+    font-family: 'Ubuntu_Regular';
+    font-weight: bold;
+
+}
+/*Icone*/
+.Icon_ceu{
+
+    width: 30px;
+}
+
+
+/*=============================================*/
+/*=============================================*/
+/*=============================================*/
+/*=============================================*/
+
+
+/*Linhas das informacoes*/
+.Linha_1, .Linha_2{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Titulo_Dado, .Informacao_Dado{
+
+    font-weight: bold;
+    max-width: 100%;
+}
+
+.Titulo_Dado{
+
+    margin-top: 10px;
+}
+
+.Informacao_Dado{
+
+    margin-top: 10px;
+}
+
+
+/*=============================================*/
+/*=============================================*/
+/*=============================================*/
+/*=============================================*/
+
+
+.Div_Barra_pesquisa{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+
+    background-color: #C2C2C2;
+    height: 35px;
+    border-radius: 100px;
+}
+/*Barra de pesquisa*/
+.Barra_pesquisa{
+
+    width: 300px;
+    max-width: 100%;
+    height: 35px;
+    border: none;
+    background: transparent;
+    padding: 0 20px;
+
+    font-size: 16px;
+    font-weight: bold;
+    color: #575757;
+}
+/*Quando clicarem na caixa de pesquisa*/
+.Barra_pesquisa:focus{
+
+    outline: none;
+    border: none;
+}
+
+
+/*=============================================*/
+/*=============================================*/
+/*=============================================*/
+/*=============================================*/
+
+
+.Rodape{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 100%;
+
+    background-image: linear-gradient( white, #D9D9D9);
+}
+
+/*Div das redes sociais*/
+.Rede_Social{
+
+    display: flex;
+    align-items: center;
+
+    padding: 10px 10px;
+    border-radius: 10px;
+
+    transition: 0.1s;
+}
+/*Animacao de background*/
+.Rede_Social:hover{
+
+    background-color: #C2C2C2;
+}
+
+/*Logo da rede social*/
+.Logo_Rede_Social{
+
+    width: 40px;
+}
+/*Nome da rede social*/
+.Nome_Rede_Social{
+
+    font-weight: bold;
+    color: black;
+
+    margin-left: 10px;
+}
