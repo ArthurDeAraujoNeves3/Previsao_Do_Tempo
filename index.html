@@ -9,20 +9,20 @@
     <link rel="stylesheet" href="./Src/Css/style.css"> <!--Css do site-->
     <link rel="stylesheet" href="./Src/Fonts/fonts.css"> <!--Css das fontes-->
 </head>
-<body>
+<body id="body">
     
     <div class="Tabela_Do_Tempo">
 
-        <h2 class="Nome_Cidade" id="Nome_Cidadee">Juazeiro do Norte</h1>
+        <h2 class="Nome_Cidade" id="Nome_Cidadee"></h1> <!--Nome da cidade-->
 
         <div class="Tempo">
 
-            <p class="Graus" id="Grauss">33</p>
+            <p class="Graus" id="Grauss"></p>
 
             <div class="Btns_celsius_farenheit">
 
-                <p class="Btns_graus">°C</p>
-                <p class="Btns_graus" id="farenheit">°F</p>
+                <p class="Btns_graus" id="celsius" name="" onclick="Conversao_Celsius()">°C</p>
+                <p class="Btns_graus" id="farenheit" onclick="Conversao_Farenheit()">°F</p>
 
             </div> <!--Botoes para trocar de celsius para farenheit-->
 
@@ -30,10 +30,10 @@
 
         <div class="Div_Ceu">
 
-            <p class="Ceu" id="Ceuu">Ceu limpo</p>
-            <image class="Icon_ceu" id="Icon_ceuu" src="./Src/Image/sun.png"></image>
+            <p class="Ceu" id="Ceuu"></p>
+            <image class="Icon_ceu" id="Icon_ceuu" src="./Src/Image/Icons/Ceu limpo.png"></image>
 
-        </div>
+        </div> <!--Informacao sobre o ceu-->
 
         <div class="Informacoes_extras">
 
@@ -42,14 +42,14 @@
                 <div class="Dados">
 
                     <p class="Titulo_Dado">Sensação térmica</p>
-                    <p class="Informacao_Dado" id="Sensacao_termica">34°C</p>
+                    <p class="Informacao_Dado" id="Sensacao_termica"></p>
 
                 </div> <!--Sensacao termica-->
 
                 <div class="Dados">
 
                     <p class="Titulo_Dado">Umidade</p>
-                    <p class="Informacao_Dado" id="umidade">66%</p>
+                    <p class="Informacao_Dado" id="umidade"></p>
 
                 </div> <!--Umidade-->
 
@@ -59,15 +59,15 @@
 
                 <div class="Dados">
 
-                    <p class="Titulo_Dado">Possibilidade de chuva</p>
-                    <p class="Informacao_Dado" id="possibilidade_de_chuva">0%</p>
+                    <p class="Titulo_Dado">Velocidade do vento</p>
+                    <p class="Informacao_Dado" id="velocidade_vento"></p>
 
                 </div> <!--Possibilidade de chuva-->
 
                 <div class="Dados">
 
                     <p class="Titulo_Dado">Pressão</p>
-                    <p class="Informacao_Dado" id="pressao">1014mbar</p>
+                    <p class="Informacao_Dado" id="pressao"></p>
 
                 </div> <!--Pressao-->
 
@@ -77,12 +77,14 @@
 
         <div class="Div_Barra_pesquisa">
 
-            <Image src=""></Image>
+            <Image class="Icone_lupa" src="./Src/Image/search.png" onclick="nome_da_cidade()"></Image>
             <input class="Barra_pesquisa" id="Barra_pesquisaa" placeholder="Digite uma cidade" type="text">
+            <p class="Aviso" id="Avisoo"></p>
 
         </div> <!--Barra de pesquisa-->
 
     </div> <!--Tabela das informacoes-->
+
 
     <!--===================================-->
     <!--===================================-->
@@ -119,6 +121,15 @@
         </div>
 
     </footer> <!--Rodape-->
+
+
+    <!--===================================-->
+    <!--===================================-->
+    <!--===================================-->
+    <!--===================================-->
+
+    <script src="./Src/Scripts/Conversao_Grau.js"></script>
+    <script src="./Src/Scripts/Buscar_Cidade.js"></script>
 
 </body>
 </html>

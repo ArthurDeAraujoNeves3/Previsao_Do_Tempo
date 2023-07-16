@@ -3,3 +3,13 @@
     font-family: 'Ubuntu_Regular';
     src: url(./Ubuntu/Ubuntu-Regular.ttf);
 }
+@font-face{
+
+    font-family: 'Ubuntu_Medium';
+    src: url(./Ubuntu/Ubuntu-Medium.ttf);
+}
+@font-face{
+
+    font-family: 'Ubuntu_Light';
+    src: url(./Ubuntu/Ubuntu-Light.ttf);
+}
