@@ -90,7 +90,7 @@ function Dados_Na_Tela(Cidade, dados){
     //Temperatura
     if(Celsius_Farenheit.id == "farenheit"){
 
-        var temp = dados.main.temp_max;
+        var temp = dados.main.temp;
 
         temp = ((temp * 1.8) + 32).toFixed(2);
 
@@ -100,7 +100,7 @@ function Dados_Na_Tela(Cidade, dados){
     else{
 
         let Temperatura = document.getElementById("Grauss");
-        Temperatura.innerHTML = dados.main.temp_max;
+        Temperatura.innerHTML = dados.main.temp;
     }
 
     //Sensacao termica
