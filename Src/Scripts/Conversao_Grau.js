@@ -1,6 +1,5 @@
 let cont = 1;
 
-//Conversao para celsius
 function Conversao_Celsius(){
 
     let Btn_Celsius = document.getElementById('celsius'); //Botao para mostrar temperatura em celsius
@@ -14,6 +13,7 @@ function Conversao_Celsius(){
     let Sensacao_Termica = document.getElementById("Sensacao_termica").innerHTML;
     Sensacao_Termica = parseFloat(Sensacao_Termica);
 
+    //Farenheit para celsius
     if(cont == 0){
 
         Btn_Celsius.style.color = '#575757'; //Botao ativo
@@ -25,10 +25,13 @@ function Conversao_Celsius(){
         Sensacao_Termica = ((Sensacao_Termica - 32) / 1.8).toFixed(2);
         Sensacao_Termica_HTML.innerHTML = `${Sensacao_Termica}°C`; //Inserindo valor no html
 
+        let Celsius_Farenheit = document.getElementsByClassName("Btns_celsius_farenheit");
+        Celsius_Farenheit.id = "celsius";
+        
         cont++;
     } 
 }
-//Conversao para farenheit
+
 function Conversao_Farenheit(){
 
     let Btn_Celsius = document.getElementById('celsius'); //Botao para mostrar temperatura em celsius
@@ -42,6 +45,7 @@ function Conversao_Farenheit(){
     let Sensacao_Termica = document.getElementById("Sensacao_termica").innerHTML;
     Sensacao_Termica = parseFloat(Sensacao_Termica);
 
+    //Celsius para farenheit
     if(cont == 1){
 
         Btn_Celsius.style.color = '#C0C0C0'; //Botao desligado
@@ -53,6 +57,9 @@ function Conversao_Farenheit(){
         Sensacao_Termica = ((Sensacao_Termica * 1.8) + 32).toFixed(2);
         Sensacao_Termica_HTML.innerText = `${Sensacao_Termica}°F`; //Inserindo valor no html
 
+        let Celsius_Farenheit = document.getElementsByClassName("Btns_celsius_farenheit");
+        Celsius_Farenheit.id = "farenheit";
+        
         cont--;
     }
 }

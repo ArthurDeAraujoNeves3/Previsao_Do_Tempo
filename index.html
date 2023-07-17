@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="./Src/Css/style.css"> <!--Css do site-->
     <link rel="stylesheet" href="./Src/Fonts/fonts.css"> <!--Css das fontes-->
+    <link rel="shortcut icon" href="./favicon/favicon.png" type="image/x-icon"> <!--favicon do site-->
 </head>
 <body id="body">
     
@@ -19,7 +20,7 @@
 
             <p class="Graus" id="Grauss"></p>
 
-            <div class="Btns_celsius_farenheit">
+            <div class="Btns_celsius_farenheit" id="">
 
                 <p class="Btns_graus" id="celsius" name="" onclick="Conversao_Celsius()">°C</p>
                 <p class="Btns_graus" id="farenheit" onclick="Conversao_Farenheit()">°F</p>
@@ -30,8 +31,8 @@
 
         <div class="Div_Ceu">
 
-            <p class="Ceu" id="Ceuu"></p>
-            <image class="Icon_ceu" id="Icon_ceuu" src="./Src/Image/Icons/Ceu limpo.png"></image>
+            <p class="Ceu" id="Ceuu"></p> <!--Nublado, chuva leve-->
+            <image class="Icon_ceu" id="Icon_ceuu" src=""></image> <!--Icone do tempo-->
 
         </div> <!--Informacao sobre o ceu-->
 
@@ -79,11 +80,10 @@
 
             <Image class="Icone_lupa" src="./Src/Image/search.png" onclick="nome_da_cidade()"></Image>
             <input class="Barra_pesquisa" id="Barra_pesquisaa" placeholder="Digite uma cidade" type="text">
-            <p class="Aviso" id="Avisoo"></p>
-
+        
         </div> <!--Barra de pesquisa-->
 
-    </div> <!--Tabela das informacoes-->
+    </div> <!--Tabela das informacoes de tempo-->
 
 
     <!--===================================-->
@@ -128,8 +128,8 @@
     <!--===================================-->
     <!--===================================-->
 
-    <script src="./Src/Scripts/Conversao_Grau.js"></script>
-    <script src="./Src/Scripts/Buscar_Cidade.js"></script>
+    <script src="./Src/Scripts/Conversao_Grau.js"></script> <!--Script para conversao de temperatura-->
+    <script src="./Src/Scripts/Buscar_Cidade.js"></script> <!--Script para busca da cidades e seus dados-->
 
 </body>
 </html>
