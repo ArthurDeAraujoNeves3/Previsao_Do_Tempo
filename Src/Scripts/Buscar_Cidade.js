@@ -7,6 +7,17 @@ function nome_da_cidade(){
 
     Buscar_Dados(Cidade);
 }
+//Buscando nome da cidade com a tecla enter
+document.getElementById("Barra_pesquisaa").addEventListener("keypress", (e) => {
+
+    //Pressionado a tecla enter, ele fara a busca
+    if(e.key == "Enter"){
+
+        let Cidade = document.getElementById("Barra_pesquisaa").value;
+
+        Buscar_Dados(Cidade);
+    }
+})
 
 //Usamos funcoes assincronas para comunicacao com os servidores
 async function Buscar_Dados(Cidade){
